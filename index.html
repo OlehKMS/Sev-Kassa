@@ -5,13 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.min.css">
    <title>Sev Kassa</title>
 </head>
 
@@ -311,22 +312,94 @@
             Наши специалисты свяжутся с вами и найдут оптимальные для вас условия сотрудничества
          </div>
          <form class="question_form" action="#">
-            <input class="question_input" type="text" value="Имя">
-            <input class="question_input" type="tel" value="Телефон">
-            <button class="question_button">Заказать конcультацию</button>
+            <input class="question_input" type="text" placeholder="Имя">
+            <input class="question_input" type="tel" maxlength="8" placeholder="Телефон">
+            <!-- <button class="question_button">Заказать конcультацию</button> -->
+            <input class="order_consultation" type="submit" value="Заказать конcультацию">
          </form>
          <div class="question_text2">
             Нажимая кнопку "Заказать консультацию" вы соглашаетесь
             с политикой обработки персональнх данных
          </div>
       </div>
+      <div class="feedback_customers">
+         <h2 class="subtitle_shop">отзывы наших покупателей</h2>
+         <div class="swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="customers">
+                     <div class="feedback_foto_text">
+                        <div class="feedback_foto">
+                           <img src="./img/customer_foto.jpg" alt="">
+                        </div>
+                        <div class="feedback_text">
+                           Все очень просто и быстро активировала, даже не ожидала такой лёгкости. спасибо большое
+                           продавцу! Конечно я рекомендую эту услугу. Все благ вам. Совсем дёшево оплатила офд на 3
+                           года, это просто находка!!!!
+                        </div>
+                     </div>
+                     <div class="name_stars_customers">
+                        <div class="name_customers">Сергей</div>
+                        <div class="star_costumers"><img src="./img/costumer_stars.svg" alt=""></div>
+                        <div class="data_costimers">10.02.2021</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="customers">
+                     <div class="feedback_foto_text">
+                        <div class="feedback_foto">
+                           <img src="./img/customer_foto.jpg" alt="">
+                        </div>
+                        <div class="feedback_text">
+                           Все очень просто и быстро активировала, даже не ожидала такой лёгкости. спасибо большое
+                           продавцу! Конечно я рекомендую эту услугу. Все благ вам. Совсем дёшево оплатила офд на 3
+                           года, это просто находка!!!!
+                        </div>
+                     </div>
+                     <div class="name_stars_customers">
+                        <div class="name_customers">Сергей</div>
+                        <div class="star_costumers"><img src="./img/costumer_stars.svg" alt=""></div>
+                        <div class="data_costimers">10.02.2021</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="customers">
+                     <div class="feedback_foto_text">
+                        <div class="feedback_foto">
+                           <img src="./img/customer_foto.jpg" alt="">
+                        </div>
+                        <div class="feedback_text">
+                           Все очень просто и быстро активировала, даже не ожидала такой лёгкости. спасибо большое
+                           продавцу! Конечно я рекомендую эту услугу. Все благ вам. Совсем дёшево оплатила офд на 3
+                           года, это просто находка!!!!
+                        </div>
+                     </div>
+                     <div class="name_stars_customers">
+                        <div class="name_customers">Сергей</div>
+                        <div class="star_costumers"><img src="./img/costumer_stars.svg" alt=""></div>
+                        <div class="data_costimers">10.02.2021</div>
+                     </div>
+                  </div>
+               </div>
+               ...
+            </div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+         </div>
+         <div class="add_review">Добавить отзыв</div>
+      </div>
+      <!-- swiper -->
    </div>
 
 
 
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/main.min.js"></script>
 
-   <!-- <script src="js/main.min.js"></script> -->
    <script src="js/main.js"></script>
 </body>
 
